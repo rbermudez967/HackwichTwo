@@ -34,6 +34,14 @@
                                     <action selector="freddyButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H3f-kR-LLE"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lxf-tI-owq">
+                                <rect key="frame" x="125" y="318" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Push to Segue"/>
+                                <connections>
+                                    <segue destination="6vo-O6-Rcs" kind="show" id="eJR-3S-Gn5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -41,22 +49,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="546" y="-601"/>
+            <point key="canvasLocation" x="544.79999999999995" y="-601.34932533733138"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="S9a-an-ajd">
             <objects>
-                <viewController id="6vo-O6-Rcs" sceneMemberID="viewController">
+                <viewController id="6vo-O6-Rcs" customClass="SecondViewController" customModule="HackwichTwo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7cX-dM-pCh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VlW-Dl-iVy">
-                                <rect key="frame" x="122" y="283" width="133" height="77"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeJ-qD-kCB">
+                                <rect key="frame" x="146" y="129" width="83" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Push to Segue"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fT-Gu-ye2">
+                                <rect key="frame" x="109" y="447" width="157" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change Color"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Hmm-z3-ZWu"/>
+                                    <action selector="changeColorButtonPressed:" destination="zjN-gt-UQ2" eventType="touchUpInside" id="8Ju-K1-cgL"/>
+                                    <action selector="changeColorButtonPressed:" destination="6vo-O6-Rcs" eventType="touchUpInside" id="qeB-uN-sKa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,8 +81,9 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ckk-fK-Kzl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="zjN-gt-UQ2" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-409" y="-590"/>
+            <point key="canvasLocation" x="1289" y="-601"/>
         </scene>
     </scenes>
 </document>
