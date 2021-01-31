@@ -10,6 +10,9 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var firstLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,7 +25,8 @@ class SecondViewController: UIViewController {
         //self is the viewcontroller
         //view is the UI view
         //backgroundColor is a property of the view
-        
+        self.firstLabel.text = "Ouch! Not so hard!"
+        firstLabel.textColor = UIColor.green
         self.view.backgroundColor = UIColor.purple
         
         
